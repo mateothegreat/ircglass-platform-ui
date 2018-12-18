@@ -1,0 +1,34 @@
+<div ngResizable
+     [rzHandles]="'n,e,s,w,se,sw,ne,nw'"
+     ngDraggable
+     bringToFront
+     [handle]="windowHandle"
+     class="wrapper">
+
+    <div #windowHandle
+         class="title">
+
+        <div class="left">
+
+            {{ title }}
+
+        </div>
+
+        <div class="right">
+
+
+        </div>
+
+    </div>
+
+    <div class="containers">
+
+        <app-chat-window-content></app-chat-window-content>
+
+        <app-chat-window-users-list></app-chat-window-users-list>
+
+    </div>
+
+    <app-chat-window-input></app-chat-window-input>
+
+</div>

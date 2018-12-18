@@ -1,0 +1,52 @@
+@import 'theme';
+
+:host {
+    
+    .wrapper {
+        
+        display: flex;
+        
+        background: $header-background;
+        
+        padding: 10px 20px 10px 10px;
+        
+        i {
+            
+            color: $header-icon-color;
+            cursor: pointer;
+        }
+        
+        .left {
+            
+            flex: 0 1 200px;
+            
+            .logo {
+                
+                img {
+                    
+                    width: 100px;
+                    
+                }
+                
+            }
+            
+        }
+        
+        .right {
+            
+            flex: 1;
+            
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            
+            .menu {
+            
+            
+            }
+            
+        }
+        
+    }
+    
+}
