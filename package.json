@@ -7,7 +7,8 @@
         "build": "ng build",
         "test": "ng test",
         "lint": "ng lint",
-        "e2e": "ng e2e"
+        "e2e": "ng e2e",
+        "docs": "typedoc -out doc --exclude *.spec.* --mode file --theme node_modules/typedoc-clarity-theme/bin src/app"
     },
     "private": true,
     "dependencies": {
@@ -23,9 +24,14 @@
         "@angular/platform-browser-dynamic": "~7.0.0",
         "@angular/router": "~7.0.0",
         "@ngxux/ngxux-mat-dialog": "0.0.2",
+        "@types/socket.io": "^2.1.2",
         "angular2-draggable": "^2.1.9",
         "core-js": "^2.5.4",
+        "faker": "^4.1.0",
+        "net": "^1.0.2",
         "rxjs": "~6.3.3",
+        "sockjs-client": "^1.3.0",
+        "stompjs": "^2.3.3",
         "zone.js": "~0.8.26"
     },
     "devDependencies": {
@@ -34,6 +40,7 @@
         "@angular/compiler-cli": "~7.0.0",
         "@angular/language-service": "~7.0.0",
         "@fortawesome/fontawesome-pro": "^5.6.1",
+        "@types/faker": "^4.1.4",
         "@types/jasmine": "~2.8.8",
         "@types/jasminewd2": "~2.0.3",
         "@types/node": "~8.9.4",
@@ -48,6 +55,7 @@
         "protractor": "~5.4.0",
         "ts-node": "~7.0.0",
         "tslint": "~5.11.0",
+        "typedoc-clarity-theme": "^1.1.0",
         "typescript": "~3.1.1"
     }
 }

@@ -1,3 +1,14 @@
-<p>
-  chat-window-content works!
-</p>
+<div class="wrapper">
+
+    <div class="messages">
+
+        <app-chat-window-content-message
+            *ngFor="let message of chatService.windows[0].messages"
+            [message]="message">
+
+        </app-chat-window-content-message>
+
+
+    </div>
+
+</div>

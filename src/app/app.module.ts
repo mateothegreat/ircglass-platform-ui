@@ -7,6 +7,7 @@ import { ChatModule }              from './chat/chat.module';
 import { HeaderComponent }         from './header/header.component';
 import { SettingsModule }          from './settings/settings.module';
 import { SharedModule }            from './shared/shared.module';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
 
@@ -14,6 +15,7 @@ import { SharedModule }            from './shared/shared.module';
 
         AppComponent,
         HeaderComponent,
+        FooterComponent,
 
     ],
 

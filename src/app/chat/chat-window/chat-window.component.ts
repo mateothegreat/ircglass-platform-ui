@@ -1,4 +1,5 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { ChatService }       from '../chat.service';
 
 @Component({
     selector: 'app-chat-window',
@@ -7,14 +8,12 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class ChatWindowComponent implements OnInit {
 
-    @Input() public title: string;
-
-    public constructor() {
-
+    public constructor(public chatService: ChatService) {
 
     }
 
     public ngOnInit() {
+
     }
 
 }

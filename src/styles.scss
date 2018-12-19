@@ -1,3 +1,4 @@
+@import 'theme';
 @import '@angular/material/prebuilt-themes/purple-green.css';
 
 $fa-font-path: "../node_modules/@fortawesome/fontawesome-pro/webfonts";
@@ -5,9 +6,65 @@ $fa-font-path: "../node_modules/@fortawesome/fontawesome-pro/webfonts";
 @import "../node_modules/@fortawesome/fontawesome-pro/scss/fontawesome.scss";
 @import "../node_modules/@fortawesome/fontawesome-pro/scss/solid.scss";
 
+body {
+    
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    
+}
 
 button i {
     
     padding-right: 10px;
+    
+}
+
+* {
+    
+    outline: none;
+    
+}
+
+.mat-dialog-container {
+    
+    padding: 0 !important;
+    
+}
+
+
+ngxux-mat-dialog {
+    
+    .header {
+        
+        background: $dialog-header-background !important;
+        
+        .title {
+            
+            color: $dialog-header-color !important;
+            
+        }
+        
+        .buttons {
+            
+            mat-icon {
+                
+                color: $dialog-header-icon-color;
+                
+            }
+            
+        }
+        
+    }
+    
+    .content {
+        
+        background: $dialog-content-background !important;
+        
+    }
+    
+    .footer {
+        
+        background: $dialog-footer-background !important;
+        
+    }
     
 }

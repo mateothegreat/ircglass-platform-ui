@@ -1,10 +1,24 @@
 $window-background: #000;
-$header-background: #111;
+$header-background: linear-gradient(to bottom, #101010 0%, black 40%);
 $header-icon-color: #666;
+$footer-background: #111;
+$footer-hover-background: #333;
+$footer-title-color: lightblue;
+$footer-icon-color: lightblue;
+$dialog-header-background: #333;
+$dialog-header-color: #000;
+$dialog-header-icon-color: #000;
+$dialog-content-background: #555;
+$dialog-footer-background: #333;
 
 $chat-window-background: #000;
 $chat-window-border: #333;
 $chat-window-title-background: #222;
+$chat-window-title-color: rebeccapurple;
 $chat-window-users-list-background: #333;
 $chat-window-content-background: #111;
 $chat-window-input-background: #222;
+$chat-window-message-mine-color: #333;
+$chat-window-message-date-color: #455;
+$chat-window-message-username-color: #455;
+$chat-window-message-from-theirs-color: rebeccapurple;

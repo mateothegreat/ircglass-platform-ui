@@ -7,6 +7,7 @@ import { ChatWindowInputComponent }     from './chat-window/chat-window-input/ch
 import { ChatWindowUsersListComponent } from './chat-window/chat-window-users-list/chat-window-users-list.component';
 import { ChatWindowComponent }          from './chat-window/chat-window.component';
 import { ChatComponent }                from './chat.component';
+import { ChatWindowContentMessageComponent } from './chat-window/chat-window-content/chat-window-content-message/chat-window-content-message.component';
 
 @NgModule({
 
@@ -18,6 +19,7 @@ import { ChatComponent }                from './chat.component';
         ChatWindowContentComponent,
         ChatWindowUsersListComponent,
         ChatWindowInputComponent,
+        ChatWindowContentMessageComponent,
 
     ],
 

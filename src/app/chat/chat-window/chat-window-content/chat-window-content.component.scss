@@ -1,0 +1,21 @@
+@import 'theme';
+
+:host {
+    
+    .wrapper {
+        
+        
+        .messages {
+            
+            overflow: auto;
+        }
+        
+        app-chat-window-content-message {
+            overflow: auto;
+            
+            
+        }
+        
+    }
+    
+}

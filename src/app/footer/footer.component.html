@@ -1,0 +1,24 @@
+<div class="wrapper">
+
+    <div class="windows">
+
+        <div *ngFor="let window of chatService.windows"
+             class="window">
+
+            <div class="left">
+
+                <i class="fas fa-comments-alt"></i>
+
+            </div>
+
+            <div class="right">
+
+                {{ window.title }}
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

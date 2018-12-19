@@ -1,4 +1,7 @@
-import { Component } from '@angular/core';
+import { Component }        from '@angular/core';
+import { MessageParsed }    from './_lib/MessageParsed';
+import { MessagingService } from './_lib/MessagingService';
+import { ChatService }      from './chat/chat.service';
 
 @Component({
     selector: 'app-root',
@@ -7,10 +10,18 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-    public bringToFront(e: any): void {
+    public constructor(private messagingService: MessagingService,
+                       private chatService: ChatService) {
 
-        console.log(e);
+        messagingService.queue$.subscribe((message: MessageParsed) => {
+
+            console.log(message);
+
+        });
+
+        chatService.joinChannel('#agaeq14');
 
     }
 
 }
+

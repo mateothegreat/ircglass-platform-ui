@@ -1,0 +1,53 @@
+@import 'theme';
+
+:host {
+    
+    .wrapper {
+        
+        background: $footer-background;
+        height: 30px;
+        
+        .windows {
+            
+            display: flex;
+            align-items: center;
+            
+            .window {
+                
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+                padding: 5px 20px;
+                
+                border-right: 1px solid #333;
+                
+                &:hover {
+                    
+                    background: $footer-hover-background;
+                    
+                }
+                
+                .left {
+                    
+                    i {
+                        
+                        color: $footer-icon-color;
+                        margin-right: 5px;
+                        
+                    }
+                    
+                }
+                
+                .right {
+                    
+                    color: $footer-title-color;
+                    
+                }
+                
+            }
+            
+        }
+        
+    }
+    
+}

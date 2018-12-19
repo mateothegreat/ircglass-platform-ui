@@ -1,0 +1,43 @@
+@import 'theme';
+
+:host {
+    
+    .wrapper {
+        
+        display: flex;
+        
+        div {
+            
+            padding: 5px 5px 0;
+            
+            
+        }
+        
+        .date {
+            
+            flex: 0 1 150px;
+            
+            color: $chat-window-message-date-color;
+            
+        }
+        
+        .username {
+            
+            flex: 0 1 50px;
+            text-align: right;
+            
+            color: $chat-window-message-username-color;
+            
+        }
+        
+        .message {
+            
+            flex: 1;
+            
+            color: $chat-window-message-from-theirs-color;
+            
+        }
+        
+    }
+    
+}

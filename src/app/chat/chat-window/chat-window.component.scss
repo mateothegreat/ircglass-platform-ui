@@ -6,6 +6,7 @@
         
         display: flex;
         flex-direction: column;
+        height: 100%;
         
         -webkit-border-radius: 4px;
         -moz-border-radius: 4px;
@@ -17,9 +18,14 @@
         
         .title {
             
-            flex: 0 1 50px;
+            flex: 0 1 30px;
+            
+            display: flex;
+            align-items: center;
+            padding: 5px;
             
             background: $chat-window-title-background;
+            color: $chat-window-title-color;
             
         }
         

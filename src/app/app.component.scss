@@ -12,9 +12,24 @@
         
         background: $window-background;
         
+        display: flex;
+        flex-direction: column;
+        
+        app-header {
+            
+            flex: 0 1 50px;
+            
+        }
+        
         app-chat-window {
             
-            position: absolute;
+            flex: 1;
+            
+        }
+        
+        app-footer {
+            
+            flex: 0 1 30px;
             
         }
         
